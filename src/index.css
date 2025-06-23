@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Add this to your index.css */
+button[aria-label="Previous slide"],
+button[aria-label="Next slide"] {
+  display: none !important;
+}
+
+/* index.css */
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+div[aria-label="Carousel"]::-webkit-scrollbar {
+  display: none !important;
+}
+div[role="region"]::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* index.css */
+.carousel-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
