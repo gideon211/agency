@@ -6,14 +6,17 @@ import company4 from '../assets/company4.png';
 import company5 from '../assets/company5.png';
 import company6 from '../assets/company6.png';
 import company7 from '../assets/company7.png';
+import membership from '../assets/icons/membership.png';
+import association from '../assets/icons/association.png';
+import club from '../assets/icons/club.png';
 
 
 
 const Services = () => {
                const services =[
-                              {id: 1, title: "Membership Organizations", description:"Our membership management software provides full automation of membership renewals and payments",  image: "/src/assets/icons/membership.png"},
-                              {id: 2, title: "National Associations", description:"Our membership management software provides full automation of membership renewals and payments",  image: "/src/assets/icons/association.png"},
-                              {id: 3, title: "Clubs And Groups", description:"Our membership management software provides full automation of membership renewals and payments",  image: "/src/assets/icons/club.png"},
+                              {id: 1, title: "Membership Organizations", description:"Our membership management software provides full automation of membership renewals and payments",  image:{membership}},
+                              {id: 2, title: "National Associations", description:"Our membership management software provides full automation of membership renewals and payments",  image:{association}},
+                              {id: 3, title: "Clubs And Groups", description:"Our membership management software provides full automation of membership renewals and payments",  image:{club}},
                ]
   return (
     <div id="service" className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto">
